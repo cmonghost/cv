@@ -1,0 +1,307 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+% Formatting -----------------------------------------------------------------
+
+\usepackage{tipa}
+\usepackage{soul}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{%
+    colorlinks,
+    linkcolor={blue!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!50!black},
+}
+\usepackage{geometry}
+
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large%
+}
+
+\setlength\parindent{0em}
+
+% Typefaces ------------------------------------------------------------------
+
+\RequirePackage{fontspec}
+\defaultfontfeatures{Scale = MatchLowercase}
+\setmainfont[Ligatures={TeX},Numbers={OldStyle}]{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\setmonofont{Fira Mono}
+
+% Metadata -------------------------------------------------------------------
+
+\def\name{Timothy Gadanidis}
+
+\hypersetup{%
+    colorlinks = true,
+    urlcolor = black,
+    pdfauthor = {\name},
+    pdftitle = {\name: Curriculum Vitae},
+    pdfsubject = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\geometry{%
+    body={6.5in, 8.5in},
+    left=1.0in,
+    top=1.25in
+}
+
+% Headers --------------------------------------------------------------------
+
+\RequirePackage{fancyhdr}
+\fancyhf{}
+\pagestyle{fancy}
+\fancyfoot[C]{{\thepage}}
+\newcommand\headtitle[1]{\fancyhead[L]{\caps{#1}}}
+
+\fancyhead[R]{\caps{Curriculum vitae}}
+
+\fancypagestyle{plain}{%
+    \renewcommand{\headrulewidth}{0pt}%
+    \fancyhf{}%
+    \fancyfoot[C]{}%
+}
+
+\headtitle{Timothy Gadanidis}
+
+% Ignore warnings ------------------------------------------------------------
+
+\usepackage{silence}
+\ErrorFilter*{pdflatex}{You can't}
+
+\hbadness=3000
+
+% Document -------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{plain}
+
+% Title
+\centerline{\Huge \scshape \name}
+\vspace{0.2em}
+\centerline{\large \textipa{/"tIm@Ti ""g\ae{}d@"nidIs/}}
+\vspace{0.2em}
+\centerline{\footnotesize Last updated: \today}
+
+\medskip\hrule height 1pt
+
+\vspace{0.25in}
+
+% Contact
+\begin{tabular}{ll}
+    Phone: & (289) 685 4150 \\
+    Email: & \href{mailto:timothy.gadanidis@mail.utoronto.ca}%
+    {\texttt{timothy.gadanidis@mail.utoronto.ca}} \\
+    Website: & \href{http://www.gadanidis.ca}{\texttt{gadanidis.ca}}
+\end{tabular}%
+\hfill%
+\begin{minipage}{0.4\linewidth}
+    \raggedright\
+    %{1401--66 Isabella Street\\ Toronto, ON, M4Y~1N3}
+    {%
+        \hfill Dept.\ of Linguistics, University of Toronto\\
+        \hfill Sidney Smith Building, 4th Floor\\
+        \hfill 100 St.\ George Street\\
+        \hfill Toronto, Ontario, M5S~3G3\\
+    }
+\end{minipage}
+
+\section*{Education}
+\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+    2018-- & Ph.D. (Linguistics) --- University of Toronto \\
+    2017--2018 & M.A. (Linguistics) --- University of Toronto \\
+               & \hspace{1em}\emph{Major research paper}: ``Um, about that, uh, variable''
+                 (\emph{uh} and \emph{um} in instant messaging) \\
+               & \hspace{1em}\emph{Supervisor}: Derek Denis \\
+    2013--2017 & Hon. B.A. (Linguistics), high distinction --- University
+    of Toronto \\
+\end{tabular}
+
+% todo research interests
+
+\section*{Publications}
+\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+    (in prep.) &\textbf{Gadanidis, Timothy} and Derek Denis. ``Before the rise
+    of \emph{um}.'' In \textit{Discourse Pragmatic Variation and Change: Theory,
+    Innovations, Contact}. To be published by Cambridge University Press. \\
+    (in prep.) &\textbf{Gadanidis, Timothy}, Angelika Kiss, Lex Konnelly, Katharina Pabst,
+    Lisa Schlegl, Poc\-holo Umbal \& Sali Tagliamonte. Stance,
+    style, and semantics: Operationalizing insights from semantics-prag\-matics
+    to account for linguistic variation. \\
+    (in prep.) &\textbf{Gadanidis, Timothy}. ``Function, distribution and
+    meaning of \emph{uh} and \emph{um} in instant messaging.'' \\
+\end{tabular}
+
+\section*{Presentations}
+
+\subsection*{Refereed conferences}
+
+\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+    2019 & Tagliamonte, Sali, \textbf{Timothy Gadanidis}, Jean-Fran\k{c}ois
+    Juneau, Kinza Mahoon, Andrei Munteanu, Lisa Schlegl and Fiona Wilson.
+    Sounding like a `Sounder': Dialect accommodation in Ontario, Canada.
+    American Dialect Society (ADS) Annual Meeting. New York City. January 3--6,
+    2019. \\
+    2018 & \textbf{Gadanidis, Timothy}.  `What’s the \emph{uh} for?': Pragmatic
+    specialization of \emph{uh} and \emph{um} in instant messaging.  New Ways of
+    Analyzing Variation (NWAV) 47.  New York University (New York City). October
+    18--21, 2018. \\
+    2018 & \textbf{Gadanidis, Timothy}, Nicole Hildebrand-Edgar, Angelika Kiss,
+    Lex Konnelly, Katharina Pabst, Lisa Schlegl, Poc\-holo Umbal \& Sali
+    Tagliamonte.  Stance, style, and semantics: Operationalizing insights from
+    seman\-tic-pragmatics to account for linguistic variation.  New Ways of
+    Analyzing Variation (NWAV) 47. New York University (New York City). October
+    18--21, 2018. \\
+    2018 & \textbf{Gadanidis, Timothy}.  Um, about that, uh, variable: \emph{Uh}
+    and \emph{um} in teen instant messaging.  Discourse-Pragmatic Variation \&
+    Change 4. University of Helsinki (Helsinki, Finland). May 28--30th, 2018. \\
+    2018 & Denis, Derek \& \textbf{Timothy Gadanidis}.  Before the rise of
+    \emph{um}.  Discourse-Pragmatic Variation \& Change 4. University of
+    Helsinki (Helsinki, Finland). May 28--30th, 2018. \\
+\end{tabular}
+
+\subsection*{Refereed workshops}
+
+\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+    2019 & Bigelow, Lauren, \textbf{Timothy Gadanidis}, Lisa Schlegl, Pocholo
+    Umbal, and Derek Denis.  [d]at's loud, bro: A report on TH-stopping in
+    Multicultural Toronto English.  2nd Annual Buffalo-Toronto Workshop on
+    Linguistic Perspectives on Variation Within and Across Languages (Toronto).
+    March 16, 2019. \\
+    2019 & \textbf{Gadanidis, Timothy}, Naomi Nagy, and Joyce Woo.  Co-variation
+    in Heritage Cantonese in Toronto.  2nd Annual Buffalo-Toronto Workshop on
+    Linguistic Perspectives on Variation Within and Across Languages (Toronto).
+    March 16, 2019. \\
+    2018 & \textbf{Gadanidis, Timothy}.  `I'll have to steal that\ldots{}
+    \emph{um} borrow it': Investigating \emph{uh} and \emph{um} in the instant
+    messages of teens and twentysomethings.  Change \& Variation in Canada (CVC)
+    10. University of Manitoba and Université de Saint-Boniface (Winnipeg,
+    Manitoba). May 4--5th, 2018. \\
+    2018 & \textbf{Gadanidis, Timothy}, Nicole Hildebrand-Edgar, Angelika Kiss,
+    Lex Konnelly, Katharina Pabst, Lisa Schlegl, Poc\-holo Umbal \& Sali
+    Tagliamonte.  Operationalizing style in variationist analysis: stance-taking
+    and English complementizers.  Change \& Variation in Canada (CVC) 10.
+    University of Manitoba and Université de Saint-Boniface (Winnipeg,
+    Manitoba). May 4--5th, 2018. \\
+    2018 & Umbal, Pocholo, Lisa Schlegl, Katharina Pabst, Lex Konnelly, Angelika
+    Kiss, Nicole Hildebrand-Edgar, \textbf{Timothy Gadanidis} \& Sali
+    Tagliamonte.  `I think ∅ it depends on the context': Stylistic variation in
+    the use of the zero complementizer.  Change \& Variation in Canada (CVC) 10.
+    University of Manitoba and Université de Saint-Boniface (Winnipeg,
+    Manitoba). May 4--5th, 2018. \\
+    2017 & \textbf{Gadanidis, Timothy}.  Null subjects in Internet English.  9th
+    annual LGCU Welcome Workshop. University of Toronto (Toronto, Ontario).
+    October 20th, 2017. \\
+\end{tabular}
+
+\section*{Teaching}
+
+\subsection*{Teaching assistantships}
+
+\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+    Fall 2019 & LIN102: \emph{Introduction to Linguistics: Sentence Structure
+    and Meaning}. Instructor: Dr.~Susana B\'ejar. University of Toronto. \\
+    Spring 2018 & LIN101, \emph{Introduction to Linguistics: Sound Structure}.
+    Instructor: Dr.~Marisa Brook. University of Toronto. \\
+    Spring 2018 & LIN204, \emph{English Grammar}. Instructor: Phil Howson.
+    University of Toronto. \\
+    Fall 2017 & LIN200, \emph{Introduction to Language}. Instructor: Dr.~Nathan
+    Sanders. University of Toronto. \\
+\end{tabular}
+
+
+\section*{Academic work experience}
+
+% todo fix this!!!
+
+\begin{tabular}{p{0.22\textwidth}p{0.70\textwidth}}
+    May 2019 & \textit{Project Manager} for Derek Denis's 2019 Jackman
+    Scholars in Residence project.
+    Assisted undergraduate scholars-in-residence working on Multicultural
+    Toronto English by implementing a sociolinguistic survey. \\
+
+    Sept.\ 2018-- & \textit{Lab Manager and Research Assistant} for Naomi
+    Nagy's Heritage Language Variation and Change (HLVC) project.
+    Analyse and interpret sociolinguistic data,
+    manage payroll for research assistants,
+    and various other administrative and research tasks. \\
+
+    Sept.\ 2017 -- May 2018 & \textit{Research Assistant} for Derek Denis.
+    Extract, code and visualize sociolinguistic data. \\
+
+    March 2017 -- March 2018 & \textit{Research Assistant}, Sali Tagliamonte.
+    Visualize sociolinguistic variables based on various social predictors; code
+    extracted data based on various predictors for later analysis. \\
+
+    May 2014 -- April 2015 & \textit{Lab Assistant} (work-study), Sali
+    Tagliamonte.
+    Transcribe sociolinguistic interviews while highlighting
+    interesting syntactic features
+\end{tabular}
+
+\section*{Research Grants}
+\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+    2019--2022 & Joseph-Armand Bombardier Canada Graduate Scholarship
+    (Doctoral), Social Sciences and Humanities Research Council of Canada.
+    \$105,000. \\
+\end{tabular}
+
+\section*{Awards and honours}
+\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+    2018 & SSHRC Institutional Grant. Funding for recruiting participants for an
+    experiment. \$200. \\
+    2018 & Travel Grant from CRC in Language Variation \& Change.  Funding for
+    travel to CVC 10, Winnipeg. \$100. \\
+    2018 & School of Graduate Studies Conference Grant. Funding for travel to
+    DiPVaC 4, Helsinki. \$640. \\
+    2018 & SSHRC Institutional Grant. Funding for travel to DiPVaC 4, Helsinki.
+    \$250. \\
+    2013--2017 & Dean's List, University of Toronto. \\
+    2015 & St.\ Michael's College In-course Scholarship. \$1,500. \\
+    2013 & University of Toronto Scholarship. \$5,000. \\
+\end{tabular}
+
+\section*{Service}
+\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+    2019   & Volunteer, Science Rendezvous (outreach day for elementary school
+    students). \\
+    2018-- & Co-coordinator, Language Variation \& Change Research Group. \\
+    2018-- & Reviewer, \textit{Toronto Working Papers in Linguistics}. \\
+    2018-- & Coordinator, weekly LGCU (Linguistics Graduate Course Union) pub
+    night. \\
+    2018-- & Organizing committee member, annual LGCU Welcome Workshop. \\
+    2018-- & Informal consulting on statistics with LGCU members. \\
+    2017-- & Editor, LGCU Writing Support Committee. \\
+    2017-- & Linguistics Department Steward, CUPE 3902, Unit 1 (TA/CI labour
+    union). \\
+\end{tabular}
+
+\section*{Skills}
+\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+    Software &Linux, ELAN, R, PsychoPy, \LaTeX{}, Pandoc, jsPsych, Vim \\
+    Languages &English (native), French (intermediate), Japanese (intermediate)
+    \\
+    Programming &Rscript (advanced), Python (beginner), Haskell (beginner),
+    Vimscript (beginner) \\
+\end{tabular}
+
+\vfill
+
+
+% Footer
+
+\end{document}
