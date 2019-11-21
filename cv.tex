@@ -31,15 +31,17 @@
 \subsectionfont{\rmfamily\mdseries\itshape\large%
 }
 
+\usepackage{longtable}
+
 \setlength\parindent{0em}
 
 % Typefaces ------------------------------------------------------------------
 
 \RequirePackage{fontspec}
 \defaultfontfeatures{Scale = MatchLowercase}
-\setmainfont[Ligatures={TeX},Numbers={OldStyle}]{Libertinus Serif}
+\setmainfont{EB Garamond}
 \setsansfont{Libertinus Sans}
-\setmonofont{Fira Mono}
+\setmonofont{Agave}
 
 % Metadata -------------------------------------------------------------------
 
@@ -93,7 +95,7 @@
 % Title
 \centerline{\Huge \scshape \name}
 \vspace{0.2em}
-\centerline{\large \textipa{/"tIm@Ti ""g\ae{}d@"nidIs/}}
+\centerline{\large /ˈtɪməθi ˌgædəˈnidɪs/}
 \vspace{0.2em}
 \centerline{\footnotesize Last updated: \today}
 
@@ -121,7 +123,7 @@
 \end{minipage}
 
 \section*{Education}
-\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+\begin{longtable}{p{0.12\textwidth}p{0.8\textwidth}}
     2018-- & Ph.D. (Linguistics) --- University of Toronto \\
     2017--2018 & M.A. (Linguistics) --- University of Toronto \\
                & \hspace{1em}\emph{Major research paper}: ``Um, about that, uh, variable''
@@ -129,30 +131,33 @@
                & \hspace{1em}\emph{Supervisor}: Derek Denis \\
     2013--2017 & Hon. B.A. (Linguistics), high distinction --- University
     of Toronto \\
-\end{tabular}
+\end{longtable}
 
 % todo research interests
 
 \section*{Publications}
-\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+\begin{longtable}{p{0.12\textwidth}p{0.8\textwidth}}
     (submitted) &\textbf{Gadanidis, Timothy}, Angelika Kiss, Lex Konnelly,
     Katharina Pabst, Lisa Schlegl, Poc\-holo Umbal \& Sali Tagliamonte. A
     theoretically-motivated framework for coding stance: Operationalizing
     insights from semantics and pragmatics. \\
-    (in prep.) &\textbf{Gadanidis, Timothy} and Derek Denis. ``Before the rise
+    (submitted) &\textbf{Gadanidis, Timothy} and Derek Denis. ``Before the rise
     of \emph{um}.'' In \textit{Discourse Pragmatic Variation and Change: Theory,
     Innovations, Contact}. To be published by Cambridge University Press. \\
+    (submitted) &Nagy, Naomi, Joyce Woo, and \textbf{Timothy Gadanidis}.
+    ``Co-variation in Heritage Cantonese in Toronto.'' \\
     (in prep.) &\textbf{Gadanidis, Timothy}. ``Function, distribution and
     meaning of \emph{uh} and \emph{um} in instant messaging.'' \\
-    (in prep.) &Nagy, Naomi, Joyce Woo, and \textbf{Timothy Gadanidis}.
-    ``Co-variation in Heritage Cantonese in Toronto.'' \\
-\end{tabular}
+\end{longtable}
 
 \section*{Presentations}
 
 \subsection*{Refereed conferences}
 
-\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+\begin{longtable}{p{0.12\textwidth}p{0.8\textwidth}}
+    2019 & Bigelow, Lauren, \textbf{Timothy Gadanidis}, Lisa Schlegl, Pocholo
+    Umbal, and Derek Denis. Why are wasteyutes a ting? New Ways of Analyzing
+    Variation (NWAV) 48. University of Oregon, October 10--12, 2019. \\
     2019 & Tagliamonte, Sali, \textbf{Timothy Gadanidis}, Jean-Fran\k{c}ois
     Juneau, Kinza Mahoon, Andrei Munteanu, Lisa Schlegl and Fiona Wilson.
     Sounding like a `Sounder': Dialect accommodation in Ontario, Canada.
@@ -174,11 +179,11 @@
     2018 & Denis, Derek \& \textbf{Timothy Gadanidis}.  Before the rise of
     \emph{um}.  Discourse-Pragmatic Variation \& Change 4. University of
     Helsinki (Helsinki, Finland). May 28--30th, 2018. \\
-\end{tabular}
+\end{longtable}
 
 \subsection*{Refereed workshops}
 
-\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
+\begin{longtable}{p{0.12\textwidth}p{0.8\textwidth}}
     2019 & \textbf{Gadanidis, Timothy}. The social meanings of \emph{um} and
     \emph{uh}. Change \& Variation in Canada (CVC) 11. Memorial University (St.
     John's, Newfoundland and Labrador). June 14--15th, 2019. \\
@@ -211,33 +216,41 @@
     2017 & \textbf{Gadanidis, Timothy}.  Null subjects in Internet English.  9th
     annual LGCU Welcome Workshop. University of Toronto (Toronto, Ontario).
     October 20th, 2017. \\
-\end{tabular}
+\end{longtable}
 
 \section*{Teaching}
 
 \subsection*{Teaching assistantships}
 
-\begin{tabular}{p{0.12\textwidth}p{0.8\textwidth}}
-    Fall 2019 & LIN102: \emph{Introduction to Linguistics: Sentence Structure
+\begin{longtable}{p{0.12\textwidth}p{0.8\textwidth}}
+    Fall 2019 & LIN251: \emph{Introduction to Sociolinguistics}. Instructor:
+    Dr.~Marisa Brook. University of Toronto. \\
+    Spring 2018 & LIN102: \emph{Introduction to Linguistics: Sentence Structure
     and Meaning}. Instructor: Dr.~Susana B\'ejar. University of Toronto. \\
-    Spring 2018 & LIN101: \emph{Introduction to Linguistics: Sound Structure}.
+    Fall 2018 & LIN101: \emph{Introduction to Linguistics: Sound Structure}.
     Instructor: Dr.~Marisa Brook. University of Toronto. \\
     Spring 2018 & LIN204: \emph{English Grammar}. Instructor: Phil Howson.
     University of Toronto. \\
     Fall 2017 & LIN200: \emph{Introduction to Language}. Instructor: Dr.~Nathan
     Sanders. University of Toronto. \\
-\end{tabular}
+\end{longtable}
 
 
 \section*{Academic work experience}
 
-\begin{tabular}{p{0.22\textwidth}p{0.70\textwidth}}
+\begin{longtable}{p{0.24\textwidth}p{0.70\textwidth}}
 
     June 2019-- & \textit{Research Assistant} for Yoonjung Kang.
     Develop, implement and run an experiment on the effect of speech rate on
     perception of the Japanese quantity distinction for consonants and vowels,
-    including recording and manipulating stimuli and writing the experiment
-    script in jsPsych.
+    including recording and manipulating stimuli using Praat and writing the
+    experiment script in jsPsych.
+    \\
+
+    May 2019-- & \textit{Statistical consulting with R}.
+    Paid consultation with colleagues on statistics in R, helping to interpret
+    results, create visualizations, and solve programming problems.
+    Also done \emph{pro bono}.
     \\
 
     Sept.\ 2018-- & \textit{Lab Manager and Research Assistant} for Naomi
@@ -268,21 +281,21 @@
     interesting syntactic features.
     \\
 
-\end{tabular}
+\end{longtable}
 
 \section*{Research grants}
-\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+\begin{longtable}{p{0.12\textwidth}p{0.80\textwidth}}
     2019--2022 & Joseph-Armand Bombardier Canada Graduate Scholarship
     (Doctoral), Social Sciences and Humanities Research Council of Canada.
     \$105,000. \\
     2019--2022 & Ontario Graduate Scholarship (Doctoral), University of Toronto
     School of Graduate Studies.
     \$15,000. (declined) \\
-\end{tabular}
+\end{longtable}
 
 
 \section*{Awards and honours}
-\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+\begin{longtable}{p{0.12\textwidth}p{0.80\textwidth}}
     2019 & SSHRC Institutional Grant. Funding for recruiting participants for an
     experiment on \emph{uh} and \emph{um} in speech. \$200. \\
     2018 & SSHRC Institutional Grant. Funding for recruiting participants for an
@@ -296,10 +309,10 @@
     2013--2017 & Dean's List, University of Toronto. \\
     2015 & St.\ Michael's College In-course Scholarship. \$1,500. \\
     2013 & University of Toronto Scholarship. \$5,000. \\
-\end{tabular}
+\end{longtable}
 
 \section*{Service}
-\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+\begin{longtable}{p{0.12\textwidth}p{0.80\textwidth}}
     2019   & Volunteer, Science Rendezvous (outreach day for elementary school
     students). \\
     2018-- & Co-coordinator, Language Variation \& Change Research Group. \\
@@ -311,16 +324,16 @@
     2017-- & Editor, LGCU Writing Support Committee. \\
     2017-- & Linguistics Department Steward, CUPE 3902, Unit 1 (TA/CI labour
     union). \\
-\end{tabular}
+\end{longtable}
 
 \section*{Skills}
-\begin{tabular}{p{0.12\textwidth}p{0.80\textwidth}}
+\begin{longtable}{p{0.13\textwidth}p{0.80\textwidth}}
     Software &Linux, ELAN, R, PsychoPy, \LaTeX{}, Pandoc, jsPsych, Vim \\
     Languages &English (first language), French (intermediate), Japanese (intermediate),
-    Mandarin Chinese (beginner)
+    Mandarin (beginner)
     \\
     Programming & Rscript, Praat scripting, Python, Haskell, VimL \\
-\end{tabular}
+\end{longtable}
 
 \vfill
 
